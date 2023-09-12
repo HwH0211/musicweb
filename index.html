@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	</head>
+	<body>
+		<div class="headArea">
+            <ul>
+				<?php
+					error_reporting(0);
+					if($_SESSION['name']){
+				?>
+					<li><a class=logo href="index.html">云音乐</a></li>
+					<li><a><?php echo $_SESSION['name']?></a></li>
+					<li><a href="index.php?action=logout">退出</a></li>
+				<?php
+					}else{
+				?>
+					<li><a class=logo href="index.html">云音乐</a></li>
+					<li><a href="html/login.html">登录</a></li>
+					<li><a href="html/register.html">注册</a></li>	
+				<?php
+					}
+				?>
+		    </ul>
+        </div>
+        <div class="navArea">        
+            <ul>
+                <li><a href="index.php">首页</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="html/recommond.html" target="info"><span>推荐</span></a></li>                
+                    <li><a href="html/songlist.html" target="info"><span>歌单</span></a></li>
+                    <li><a href="html/anchor.html" target="info"><span>主播电台</span></a></li>
+                    <li><a href="html/singer.html" target="info"><span>歌手</span></a></li>           
+            </ul>                      
+        </div>
+		<div class="info">
+			<iframe src="banner.html" width="100%" height="600px" name="info" scrolling="no" frameborder="0"></iframe>
+		</div>
+	</body>
+</html>

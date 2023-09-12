@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgba(0,0,0,0.2);
+}
+.title{
+	font-size: 18px;
+	margin-left: 80px;
+	margin-top: 20px;
+	color: gold;
+	font-weight: bold;
+}
+.pic{
+	width: 1200px;
+}
+.pic ul{
+	width: 300px;
+	margin-top: 30px;
+	float: left;
+}
+.pic ul li{
+	text-align: center;
+	list-style:none;
+	font-size: 16px;
+	color: gold;
+	font-weight: bold;
+}
+p{
+	font-size: 18px;
+	color: gold;
+	font-weight: bold;
+}
